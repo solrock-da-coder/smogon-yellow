@@ -163,5 +163,7 @@
 	const DEX_AZUMARILL  ; 157
 	const DEX_LUVDISC    ; 158
 	const DEX_ALOMOMOLA  ; 159
+	const DEX_SOLROCK    ; 160
+	const DEX_LUNATONE   ; 161
 
 DEF NUM_POKEMON EQU const_value - 1

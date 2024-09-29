@@ -1,30 +1,25 @@
-db DEX_PAWNIARD ; pokedex id
-db 45 ; base hp
-db 85 ; base attack
-db 70 ; base defense
-db 60 ; base speed
-db 40 ; base special
-;change this to dark steel once those are in
-db GRASS ; species type 1
-db GRASS ; species type 2
-db 120 ; catch rate
-db 68 ; base exp yield
-;change sprites later
-INCBIN "pic/bmon/leafeon.pic",0,1 ; 77, sprite dimensions
-dw LeafeonPicFront
-dw LeafeonPicBack
-; attacks known at lvl 0
-db SCRATCH
-db LEER
-;idk what the number means, so ill wait to change it
-db 0 ; growth rate
-; learnset
-; need to change this, no clue what the numbers mean
-	tmlearn 3,6,8
-	tmlearn 9,10,15
-	tmlearn 20,21,22
-	tmlearn 31,32
-	tmlearn 33,34
-	tmlearn 44
-	tmlearn 50,51
-db 0 ; padding
+db DEX_PAwniard ; pokedex id
+
+	db  45,  85,  70,  60,  40
+	;   hp  atk  def  spd  spc
+
+	db DARK, STEEL ; type
+	db 120 ; catch rate
+	db 68 ; base exp
+
+;change this later when i have a pawniard sprite
+	INCBIN "gfx/pokemon/front/parasect.pic", 0, 1 ; sprite dimensions
+	dw ParasectPicFront, ParasectPicBack
+
+	db SCRATCH, LEER, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_MEDIUM_FAST ; growth rate
+
+	;change this later too
+	; tm/hm learnset
+	tmhm SWORDS_DANCE, TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
+	     HYPER_BEAM,   RAGE,         MEGA_DRAIN,   SOLARBEAM,    DIG,          \
+	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         SKULL_BASH,   \
+	     REST,         SUBSTITUTE,   CUT
+	; end
+
+	db 0 ; padding

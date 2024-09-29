@@ -155,5 +155,13 @@
 	const DEX_DRAGONITE  ; 149
 	const DEX_MEWTWO     ; 150
 	const DEX_MEW        ; 151
+	const DEX_PAWNIARD   ; 152
+	const DEX_BISHARP    ; 153
+	const DEX_KINGAMBIT  ; 154
+	const DEX_AZURILL    ; 155
+	const DEX_MARILL     ; 156
+	const DEX_AZUMARILL  ; 157
+	const DEX_LUVDISC    ; 158
+	const DEX_ALOMOMOLA  ; 159
 
 DEF NUM_POKEMON EQU const_value - 1

@@ -1,4 +1,4 @@
-db DEX_PAwniard ; pokedex id
+db DEX_PAWNIARD ; pokedex id
 
 	db  45,  85,  70,  60,  40
 	;   hp  atk  def  spd  spc

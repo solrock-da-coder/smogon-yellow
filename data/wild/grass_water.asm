@@ -11,7 +11,7 @@ WildDataPointers:
 	dw CinnabarIslandWildMons  ; CINNABAR_ISLAND
 	dw NothingWildMons         ; INDIGO_PLATEAU
 	dw NothingWildMons         ; SAFFRON_CITY
-	dw CinnabarVolcanoWildMons ; unused
+	dw CinnabarVolcano1FWildMons ; volcano
 	dw Route1WildMons          ; ROUTE_1
 	dw Route2WildMons          ; ROUTE_2
 	dw Route3WildMons          ; ROUTE_3
